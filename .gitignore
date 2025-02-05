@@ -1,0 +1,8 @@
+.vscode
+build/*
+impl/*
+!impl/*_process_config.json
+obj_dir/*
+*.user
+waveform.vcd
+

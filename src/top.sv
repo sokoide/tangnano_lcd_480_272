@@ -9,12 +9,9 @@ module top (
     output logic [4:0]   LCD_B
 );
 
-    wire CLK_SYS;
-    wire CLK_PIX;
-
-    // PLL ... make it by IP Generator -> Hard Module -> Clock -> rPLL -> clockin 27, clockout 10
+    // PLL ... make it by IP Generator -> Hard Module -> Clock -> rPLL -> clockin 27, clockout 9
     Gowin_rPLL rpll_inst (
-        .clkout (LCD_CLK), //  10MHz
+        .clkout (LCD_CLK), //   9MHz
         .clkin  (XTAL_IN)  //  27MHz
     );
 

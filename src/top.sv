@@ -10,7 +10,7 @@ module top (
 );
 
     // PLL ... make it by IP Generator -> Hard Module -> Clock -> rPLL -> clockin 27, clockout 10
-    // (480+50+30) * (272+24+5) * 60Hz = 10.1136MHz
+    // (480+50+30) * (272+20+8) * 60Hz = 10.08MHz
     Gowin_rPLL rpll_inst (
         .clkout (LCD_CLK), //  10.125MHz
         .clkin  (XTAL_IN)  //  27MHz

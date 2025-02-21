@@ -1,3 +1,5 @@
+`include "consts.svh"
+
 module lcd (
     input  logic          PixelClk,
     input  logic          nRST,
@@ -8,18 +10,6 @@ module lcd (
     output logic [5:0]    LCD_G,
     output logic [4:0]    LCD_R
 );
-
-    // Horizontal timing parameters
-    parameter int H_Pixel_Valid = 16'd480;
-    parameter int H_FrontPorch  = 16'd50;
-    parameter int H_BackPorch   = 16'd30;
-    parameter int PixelForHS    = H_Pixel_Valid + H_FrontPorch + H_BackPorch;
-
-    // Vertical timing parameters
-    parameter int V_Pixel_Valid = 16'd272;
-    parameter int V_FrontPorch  = 16'd24;
-    parameter int V_BackPorch   = 16'd5;
-    parameter int PixelForVS    = V_Pixel_Valid + V_FrontPorch + V_BackPorch;
 
     // Horizontal and Vertical pixel counters
     logic [15:0] H_PixelCount;

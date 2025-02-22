@@ -19,7 +19,10 @@ module top (
     // LCD
     lcd lcd_inst (
         .PixelClk  (LCD_CLK),
-        .nRST      (!Reset_Button),
+        // Tang Nano 20K:
+        // .nRST      (!Reset_Button),
+        // Tang Nano 9K:
+        .nRST      (Reset_Button),
 
         .LCD_DE    (LCD_DEN),
         .LCD_B     (LCD_B),

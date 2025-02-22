@@ -2,10 +2,10 @@
 //All rights reserved.
 //File Title: IP file
 //Tool Version: V1.9.10.03 Education
-//Part Number: GW2AR-LV18QN88C8/I7
-//Device: GW2AR-18
+//Part Number: GW1NR-LV9QN88PC6/I5
+//Device: GW1NR-9
 //Device Version: C
-//Created Time: Fri Feb 21 21:26:37 2025
+//Created Time: Sat Feb 22 20:56:56 2025
 
 module Gowin_rPLL (clkout, clkin);
 
@@ -40,11 +40,11 @@ rPLL rpll_inst (
 
 defparam rpll_inst.FCLKIN = "27";
 defparam rpll_inst.DYN_IDIV_SEL = "false";
-defparam rpll_inst.IDIV_SEL = 7;
+defparam rpll_inst.IDIV_SEL = 2;
 defparam rpll_inst.DYN_FBDIV_SEL = "false";
-defparam rpll_inst.FBDIV_SEL = 2;
+defparam rpll_inst.FBDIV_SEL = 0;
 defparam rpll_inst.DYN_ODIV_SEL = "false";
-defparam rpll_inst.ODIV_SEL = 64;
+defparam rpll_inst.ODIV_SEL = 48;
 defparam rpll_inst.PSDA_SEL = "0000";
 defparam rpll_inst.DYN_DA_EN = "true";
 defparam rpll_inst.DUTYDA_SEL = "1000";
@@ -59,6 +59,6 @@ defparam rpll_inst.CLKOUTD_BYPASS = "false";
 defparam rpll_inst.DYN_SDIV_SEL = 2;
 defparam rpll_inst.CLKOUTD_SRC = "CLKOUT";
 defparam rpll_inst.CLKOUTD3_SRC = "CLKOUT";
-defparam rpll_inst.DEVICE = "GW2AR-18C";
+defparam rpll_inst.DEVICE = "GW1NR-9C";
 
 endmodule //Gowin_rPLL

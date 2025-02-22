@@ -3,7 +3,10 @@ TEST=src/tb_lcd.sv
 
 export BASE=lcd_480_272
 PROJ=$(BASE).gprj
-DEVICE=GW2AR-18C
+# Tang Nano 20K
+# DEVICE=GW2AR-18C
+# Tang Nano 9K
+DEVICE=GW1NR-9C
 
 FS=$(PWD)/impl/pnr/$(BASE).fs
 

@@ -82,15 +82,15 @@ module lcd (
       spy <= 16'd0;
     end else if (LCD_DE) begin
       if (x == H_Pixel_Valid && y == V_Pixel_Valid) begin
-        if (spx == 16'd480) begin
+        if (spx >= 16'd480) begin
           spx <= 16'd0;
         end else begin
-          spx <= spx + 16'd1;
+          spx <= spx + 16'd4;
         end
-        if (spy == 16'd272) begin
+        if (spy >= 16'd272) begin
           spy <= 16'd0;
         end else begin
-          spy <= spy + 16'd1;
+          spy <= spy + 16'd4;
         end
       end
 
